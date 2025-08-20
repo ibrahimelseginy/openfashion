@@ -19,7 +19,7 @@ class Button extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        color: AppColors.primary,
+        color: AppColors.secondary,
         width: double.infinity,
         padding: EdgeInsets.symmetric(horizontal: 13,vertical: 16),
         child: Center(

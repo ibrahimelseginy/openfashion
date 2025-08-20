@@ -52,16 +52,16 @@ class _CartWidgetState extends State<CartWidget> {
             CustomText(
               text: widget.name.toUpperCase(),
               spacing: 4,
-              color: AppColors.primary,
+              color: AppColors.textPrimary,
             ),
             Gap(10),
             SizedBox(
-              width: size.width * 0.6,
+              width: size.width * 0.4,
               child: CustomText(
                 text: widget.descp.toUpperCase(),
                 max: 3,
                 spacing: 2,
-                color: AppColors.primary,
+                color: AppColors.textPrimary,
                 size: 11,
               ),
             ),
@@ -82,7 +82,7 @@ class _CartWidgetState extends State<CartWidget> {
                 CustomText(
                   text: number.toString(),
                   spacing: 4,
-                  color: AppColors.primary,
+                  color: AppColors.textPrimary,
                   weight: FontWeight.bold,
                 ),
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:openfashon/features/Home/screens/place_order.dart';
+import 'package:openfashon/features/components/custom_container.dart';
 import 'custom_text.dart';
 
 class ShippingMethod extends StatelessWidget {
@@ -17,10 +17,9 @@ class ShippingMethod extends StatelessWidget {
           size: 16,
         ),
         Gap(20),
-        customContainer(
-          "Pickup at store",
-          Icons.keyboard_arrow_down_sharp,
-          true,
+        CustomContainer(
+          text: "Pickup at store",
+          icon: Icons.keyboard_arrow_down_sharp,
         ),
         Gap(50),
       ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
 import 'package:openfashon/core/colors.dart';
 import 'custom_text.dart';
@@ -12,16 +13,17 @@ class Header extends StatelessWidget {
     return Column(
       children: [
         Gap(20),
-        Center(child: CustomText(
-          text: title.toUpperCase(),
-          color: AppColors.primary,
-          spacing: 4,
-          size: 20,
-        )),
+        Center(
+          child: CustomText(
+            text: title.toUpperCase(),
+            color: AppColors.secondary,
+            spacing: 4,
+            size: 20,
+          ),
+        ),
         Gap(10),
-        Image.asset("assets/svgs/line.png",width: 160,color: Colors.black),
+        Image.asset("assets/svgs/line.png", width: 100, color: Colors.black),
         Gap(20),
-
       ],
     );
   }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:openfashon/features/Home/screens/home.dart';
+import 'package:openfashon/features/components/app_routers.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});
@@ -13,15 +13,7 @@ class _SplashState extends State<Splash> {
   Widget build(BuildContext context) {
     Future.delayed(
       Duration(seconds: 2),
-      () => Navigator.push(
-        // ignore: use_build_context_synchronously
-        context,
-        MaterialPageRoute(
-          builder: (c) {
-            return Home();
-          },
-        ),
-      ),
+      () => Navigator.pushReplacementNamed(context, AppRoutes.home),
     );
 
     return Scaffold(

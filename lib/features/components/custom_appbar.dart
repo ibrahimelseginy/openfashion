@@ -18,16 +18,28 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
       padding: const EdgeInsets.all(8),
       child: AppBar(
         actions: [
-          SvgPicture.asset("assets/svgs/Search.svg",color: isBlack ? Colors.white : AppColors.primary),
+          SvgPicture.asset(
+            "assets/svgs/Search.svg",
+            color: isBlack ? Colors.white : AppColors.secondary,
+          ),
           Gap(20),
-          SvgPicture.asset("assets/svgs/shopping bag.svg",color: isBlack ? Colors.white : AppColors.primary),
+          SvgPicture.asset(
+            "assets/svgs/shopping bag.svg",
+            color: isBlack ? Colors.white : AppColors.secondary,
+          ),
         ],
         leadingWidth: 25,
         centerTitle: true,
         scrolledUnderElevation: 0.0,
-        backgroundColor: isBlack ? AppColors.primary : Colors.white,
-        leading: SvgPicture.asset("assets/svgs/Menu.svg",color: isBlack ? Colors.white : AppColors.primary),
-        title: SvgPicture.asset("assets/logo/logo-bg.svg",color: isBlack ? Colors.white : AppColors.primary),
+        backgroundColor: isBlack ? AppColors.secondary : Colors.white,
+        leading: SvgPicture.asset(
+          "assets/svgs/Menu.svg",
+          color: isBlack ? Colors.white : AppColors.secondary,
+        ),
+        title: SvgPicture.asset(
+          "assets/logo/logo-bg.svg",
+          color: isBlack ? Colors.white : AppColors.secondary,
+        ),
       ),
     );
   }

@@ -5,6 +5,7 @@ import 'package:ionicons/ionicons.dart';
 import 'package:openfashon/core/colors.dart';
 import 'package:openfashon/features/Home/models/product_model.dart';
 import 'package:openfashon/features/Home/screens/checkout.dart';
+import 'package:openfashon/features/components/app_routers.dart';
 import 'package:openfashon/features/components/custom_appbar.dart';
 import 'package:openfashon/features/components/custom_text.dart';
 
@@ -16,7 +17,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.primary,
+      backgroundColor: AppColors.secondary,
       appBar: CustomAppbar(isBlackk: true),
       body: Column(
         children: [
@@ -76,19 +77,16 @@ class Home extends StatelessWidget {
                           itemBuilder: (context, index) {
                             final item = ProductModel.getProducts()[index];
                             return GestureDetector(
-                              onTap:
-                                  () => Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder:
-                                          (c) => Checkout(
-                                            image: item.productImage,
-                                            name: item.productName,
-                                            price: item.productPrice.toInt(),
-                                            descp: item.productDescription,
-                                          ),
-                                    ),
-                                  ),
+                              onTap: () => Navigator.pushNamed(
+                                context,
+                                AppRoutes.checkout,
+                                arguments: Checkout(
+                                  image: item.productImage,
+                                  name: item.productName,
+                                  price: item.productPrice.toInt(),
+                                  descp: item.productDescription,
+                                ),
+                              ),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
