@@ -129,16 +129,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Developer**: [ibrahim Elseginy]
 - **Email**: [ibrahimelseginy02@gmail.com]
-- **GitHub**: []
-
-##  Acknowledgments
-
-- Thanks to Flutter Team for the amazing framework
-- Thanks to the Arabic developer community
-- Thanks to all project contributors
-
----
-
-<div align="center">
-  <strong>Made with ❤️ using Flutter</strong>
-</div>
+- **GitHub**: [https://github.com/ibrahimelseginy]
